@@ -1,0 +1,57 @@
+{
+  "name": "mcp-delphi-codecoverage",
+  "version": "1.0.0",
+  "mcpName": "io.github.avelsys/delphi-codecoverage",
+  "description": "MCP server that helps generate Delphi Units, Forms and DUnitX tests already in the shape the DelphiCodeCoverage tool expects (Map file settings, console test runner, CLI usage, CI script) - built for use with Claude Code and other MCP clients",
+  "type": "module",
+  "main": "./build/index.js",
+  "bin": {
+    "mcp-delphi-codecoverage": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "delphi",
+    "delphicodecoverage",
+    "dunitx",
+    "code-coverage",
+    "claude",
+    "claude-code",
+    "documentation"
+  ],
+  "author": {
+    "name": "Alessandro Avelino",
+    "email": "avelinoalessandro@gmail.com",
+    "url": "https://github.com/avelsys"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avelsys/mcp-delphi-codecoverage.git"
+  },
+  "homepage": "https://github.com/avelsys/mcp-delphi-codecoverage#readme",
+  "bugs": {
+    "url": "https://github.com/avelsys/mcp-delphi-codecoverage/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
